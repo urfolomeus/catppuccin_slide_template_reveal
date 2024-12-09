@@ -6,11 +6,7 @@ const storeTheme = (theme) => document.documentElement.setAttribute('data-theme'
 const setTheme = (theme) => {
   // Force media queries to update
   document.querySelectorAll('link[media]').forEach(link => {
-    if (link.href.includes('catppuccin')) {
-      const slideTheme = theme === DARK_THEME ? 'frappe' : 'latte';
-      link.media = link.href.includes(slideTheme) ? 'all' : 'not all';
-    }
-    if (link.href.includes('panda-syntax')) {
+    if (link.href.includes('catppuccin') || link.href.includes('panda-syntax')) {
       link.media = link.href.includes(theme) ? 'all' : 'not all';
     }
   });
