@@ -11,4 +11,5 @@
   --green: #a6d189;
   --yellow: #e5c890;
   --red: #e78284;
+  --text-filter: invert(87%) sepia(11%) saturate(343%) hue-rotate(193deg) brightness(103%) contrast(93%);
 }

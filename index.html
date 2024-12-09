@@ -27,6 +27,11 @@
 </head>
 
 <body>
+  <!-- Add theme toggle button with sun/moon icon -->
+  <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+    <img src="assets/images/theme-toggle.svg" alt="Toggle between light and dark theme">
+  </button>
+
   <div class="reveal">
     <div class="slides">
       <section data-markdown="slides.md" data-separator="^---"></section>
@@ -37,6 +42,50 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+
+  <!-- Add theme toggle script before Reveal initialization -->
+  <script>
+    function storeTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    function setTheme(theme) {
+      // Force media queries to update
+      document.querySelectorAll('link[media]').forEach(link => {
+        if (link.href.includes('catppuccin')) {
+          const slideTheme = theme === 'dark' ? 'frappe' : 'latte';
+          link.media = link.href.includes(slideTheme) ? 'all' : 'not all';
+        }
+        if (link.href.includes('panda-syntax')) {
+          link.media = link.href.includes(theme) ? 'all' : 'not all';
+        }
+      });
+    }
+
+    function initTheme(isDark) {
+      const theme = isDark ? 'dark' : 'light';
+      storeTheme(theme);
+      setTheme(theme);
+    }
+
+    function toggleTheme() {
+      const currentTheme = document.documentElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      storeTheme(newTheme);
+      setTheme(newTheme);
+    }
+
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+    // Initialize theme based on system preference
+    initTheme(prefersDark.matches);
+
+    // Update theme when system preference changes
+    prefersDark.addEventListener('change', (e) => initTheme(e.matches));
+
+    // Toggle theme when button is clicked
+    document.getElementById('theme-toggle').addEventListener('click', () => toggleTheme());
+  </script>
 
   <!-- Initialize Reveal -->
   <script>
