@@ -12,4 +12,5 @@
   --yellow: #df8e1d;
   --red: #d20f39;
   --text-filter: invert(31%) sepia(15%) saturate(503%) hue-rotate(197deg) brightness(94%) contrast(89%);
+  --button-opacity: 0.3;
 }
