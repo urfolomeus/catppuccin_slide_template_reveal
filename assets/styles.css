@@ -6,6 +6,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Dank Mono';
+  src: url('./fonts/DankMono-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Reveal.js Theme Customization */
 .reveal {
   font-family: 'Jellee', sans-serif;
@@ -51,6 +58,7 @@
     code {
       color: var(--green);
       font-size: 1.5em;
+      font-family: 'Dank Mono';
     }
   }
 
