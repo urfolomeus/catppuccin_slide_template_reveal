@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Slide Deck</title>
+
+  <!-- Reveal.js CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+
+  <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Markdown Plugin -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/monokai.min.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Markdown slides will be inserted here -->
+      <section data-markdown id="slides">
+        <script type="text/template">
+# My Markdown Slide Deck
+
+A presentation created entirely in Markdown!
+
+---
+
+## Code Examples
+
+```python
+def hello_world():
+    print("Markdown slides are awesome!")
+```
+
+---
+
+## Bullet Points
+
+- First amazing point
+- Second incredible insight
+- Third mind-blowing concept
+
+---
+
+## Vertical Slides
+
+### First Level
+
+Some content here
+
+----
+
+### Second Level
+
+More detailed information
+
+---
+
+## Final Slide
+
+Thank you for watching! 🎉
+                </script>
+      </section>
+    </div>
+  </div>
+
+  <!-- Reveal.js and Markdown Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+  <script>
+    Reveal.initialize({
+      width: 1280,
+      height: 720,
+      margin: 0.1,
+      minScale: 0.2,
+      maxScale: 1.5,
+      transition: 'slide',
+      plugins: [RevealMarkdown, RevealHighlight]
+    });
+  </script>
+</body>
+
+</html>
