@@ -4,17 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Markdown Slide Deck</title>
+  <title>Presentation</title>
 
   <!-- Reveal.js CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reset.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
 
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- Theme -->
   <link rel="stylesheet" href="assets/themes/catppuccin-frappe.css" media="(prefers-color-scheme: dark)">
   <link rel="stylesheet" href="assets/themes/catppuccin-latte.css" media="(prefers-color-scheme: light)">
 
-  <!-- Markdown Plugin -->
+  <!-- Code Highlight Plugin -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/panda-syntax-dark.min.css">
 </head>
@@ -22,9 +25,7 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <!-- Load markdown from external file -->
-      <section data-markdown="slides.md" data-separator="^---" data-separator-vertical="^--">
-      </section>
+      <section data-markdown="slides.md" data-separator="^---" data-separator-vertical="^--"></section>
     </div>
   </div>
 
@@ -32,6 +33,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+
+  <!-- Initialize Reveal -->
   <script>
     Reveal.initialize({
       disableLayout: false,
