@@ -73,13 +73,15 @@ Thank you for watching! 🎉
   <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
   <script>
     Reveal.initialize({
-      width: 1280,
-      height: 720,
+      disableLayout: false,
       margin: 0.1,
       minScale: 0.2,
-      maxScale: 1.5,
+      maxScale: 1.0,
       transition: 'slide',
-      plugins: [RevealMarkdown, RevealHighlight]
+      plugins: [RevealMarkdown, RevealHighlight],
+      width: "100%",
+      height: "100%",
+      responsive: true
     });
   </script>
 </body>

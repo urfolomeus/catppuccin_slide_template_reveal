@@ -33,10 +33,29 @@
 .reveal h2,
 .reveal h3 {
   color: var(--blue);
+  margin-bottom: 1rem;
+}
+
+.reveal h1 {
+  font-size: 5em;
+}
+
+.reveal h2 {
+  font-size: 4em;
+}
+
+.reveal h3 {
+  font-size: 3em;
+}
+
+.reveal p,
+.reveal li {
+  font-size: 2em;
 }
 
 .reveal .slides {
   text-align: left;
+  line-height: 1.5;
 }
 
 .reveal pre {
@@ -49,10 +68,20 @@
 
 .reveal code {
   color: var(--green);
+  font-size: 1.5em;
 }
 
 .reveal blockquote {
   border-left: 5px solid var(--lavender);
   background-color: var(--surface0);
   padding: 10px 20px;
+}
+
+.reveal ul {
+  margin: 1rem;
+  line-height: 2;
+}
+
+.reveal hr {
+  margin: 2rem 0;
 }
