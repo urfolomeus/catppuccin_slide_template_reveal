@@ -22,20 +22,6 @@ def hello_world():
 
 ---
 
-## Vertical Slides
-
-### First Level
-
-Some content here
-
-----
-
-### Second Level
-
-More detailed information
-
----
-
 ## Final Slide
 
 Thank you for watching! 🎉
