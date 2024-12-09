@@ -1,6 +1,6 @@
 # Reveal JS Catppuccin Template
 
-This is a template project for [reveal.js]() that uses [Catppuccin]() for the slide theme. It also uses [Panda Syntax]() and [Dank Mono]() for code highlighting.
+This is a template project for [reveal.js](https://revealjs.com/) that uses [Catppuccin](https://catppuccin.com/) for the slide theme. It also uses [Panda Syntax](https://highlightjs.org/demo#lang=&v=1&theme=panda-syntax-dark-min&code=IyB0aGlzIGlzIGEgY29tbWVudApkZWYgZ3JlZXQobmFtZSk6CglwcmludChmIkhlbGxvLCB7xBh9Iik%3D) and [Dank Mono](https://philpl.gumroad.com/l/dank-mono) for code highlighting.
 
 ## How to use
 
