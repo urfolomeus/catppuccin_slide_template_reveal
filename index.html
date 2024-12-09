@@ -21,50 +21,8 @@
 <body>
   <div class="reveal">
     <div class="slides">
-      <!-- Markdown slides will be inserted here -->
-      <section data-markdown id="slides">
-        <script type="text/template">
-# My Markdown Slide Deck
-
-A presentation created entirely in Markdown!
-
----
-
-## Code Examples
-
-```python
-def hello_world():
-    print("Markdown slides are awesome!")
-```
-
----
-
-## Bullet Points
-
-- First amazing point
-- Second incredible insight
-- Third mind-blowing concept
-
----
-
-## Vertical Slides
-
-### First Level
-
-Some content here
-
-----
-
-### Second Level
-
-More detailed information
-
----
-
-## Final Slide
-
-Thank you for watching! 🎉
-                </script>
+      <!-- Load markdown from external file -->
+      <section data-markdown="slides.md" data-separator="^---" data-separator-vertical="^--">
       </section>
     </div>
   </div>
